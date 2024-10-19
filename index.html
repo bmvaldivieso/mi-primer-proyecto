@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTPL Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .main-section {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px 0; 
+        }
+
+        .menu ul {
+            list-style: none;
+            padding-left: 20px; 
+        }
+
+        .menu ul li {
+            margin-bottom: 20px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul li a:hover {
+            color: #000;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-img {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            left: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+            font-size: 2.5em;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 60px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="UTPL Logo" class="logo-img">
+            <h1>UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA</h1>
+        </header>
+        <div class="main-section">
+            <aside class="sidebar">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Gestión de empleados</a></li>
+                        <li><a href="#">Asistencia</a></li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Nómina de sueldos</a></li>
+                        <li><a href="#">Ajustes</a></li>
+                        <li><a href="#">Informe</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="content">
+                <div class="main-content">
+                    
+                </div>
+            </main>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2024 Universidad Técnica Particular de Loja. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
